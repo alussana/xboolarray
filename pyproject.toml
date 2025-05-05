@@ -1,0 +1,21 @@
+[project]
+name = "xboolarray"
+version = "0.1.0"
+description = "XBoolArray: A multidimensional boolean array with annotated dimensions and coordinates."
+authors = [
+    {name = "Alessandro Lussana",email = "alessandro.lussana@proton.me"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy (>=2.0.0,<3.0.0)",
+    "xarray (>=2024.10.0,<2026.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "xboolarray", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
